@@ -3,14 +3,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-ul {
+h1,
+ul,
+p {
   margin: 0;
+}
+
+ul {
   padding: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .header-bg {
@@ -48,7 +54,7 @@ a {
   display: block;
   height: 2px;
   width: 0%;
-  background: #fff;
+  background: linear-gradient(#ffe600, #ff7a00);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
@@ -86,4 +92,65 @@ a {
     padding: 8px 12px;
     font-size: 14px;
   }
+}
+/* main introducao */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.introducao-bg {
+  color: white;
+  background: linear-gradient(180deg, #000000 0%, #151515 7.29%);
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  pad: 0 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 120px;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+  font-size: 64px;
+  line-height: 1.125;
+}
+
+.introducao h1 span {
+  color: #ffbb00;
+}
+
+.introducao p {
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+
+.introducao a {
+  display: inline-block;
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #331300;
+  text-transform: uppercase;
+  background: linear-gradient(#ffe600, #ff7a00);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.introducao a:hover {
+  color: black;
+  background: linear-gradient(180deg, #FFC700 0%, #FF5C00 100%);
 }
