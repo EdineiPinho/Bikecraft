@@ -9,6 +9,10 @@
   <title>BicCustOnm - Bicletas Personalizadas</title>
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,7 +22,7 @@
         <img src="./img/newLogo.svg" width="235" height="54" widthalt="logo da bikcustonm" />
       </a>
       <nav aria-label="primaria">
-        <ul class="header-menu">
+        <ul class="header-menu font-1-m cor-w">
           <li><a href="./bicicletas.html">Bicicletas</a></li>
           <li><a href="./seguros.html">Seguros</a></li>
           <li><a href="./contato.html">Contato</a></li>
@@ -29,16 +33,132 @@
   <main class="introducao-bg">
     <div class="container introducao">
       <div class="introducao-conteudo">
-        <h1>Bicicletas feitas sob medida<span class="dot">.</span></h1>
-        <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a BikCustOnm.</p>
-        <a href="./bicicletas.html">Ecolha a sua</a>
+        <h1 class="font-1-xxl cor-w">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
+        <p class="font-2-l cor-4">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a BikCustOnm.</p>
+        <a class="botao cor-p5" href="./bicicletas.html">Ecolha a sua</a>
       </div>
-      <picture>
+      <picture class="introducao-imagem">
         <source media="(max-width: 800px)" srcset="./img/bikes-2/nimbus-1-bike.jpg">
         <img src="./img/bikes/nimbus-intro.jpg" width="1280" height="1600" alt="Bicleta top preta">
       </picture>
     </div>
   </main>
+
+  <article class="bicicletas-lista">
+    <h2 class="container font-1-xxl">escolha a sua<span class="cor-p1">.</span></h2>
+    <ul>
+      <li>
+        <a href="./bicicletas/magic.html">
+          <img src="./img/bikes/magic-home.jpg" alt="Bicileta preta">
+          <h3 class="font-1-xl">Magic Might</h3>
+          <span class="font-2-m cor-8">R$ 2499</span>
+        </a>
+      </li>
+      <li>
+        <a href="./bicicletas/magic.html">
+          <img src="./img/bikes/nimbus-home.jpg" alt="Bicileta preta">
+          <h3 class="font-1-xl">Nimbus Stark</h3>
+          <span class="font-2-m cor-8">R$ 4999</span>
+        </a>
+      </li>
+      <li>
+        <a href="./bicicletas/magic.html">
+          <img src="./img/bikes/nebula-home.jpg" alt="Bicileta preta">
+          <h3 class="font-1-xl">Nebula Cosmic</h3>
+          <span class="font-2-m cor-8">R$ 3999</span>
+        </a>
+      </li>
+    </ul>
+  </article>
+
+  <article class="tecnologia-bg">
+    <div class="container tecnologia">
+      <div class="tecnologia-conteudo">
+        <span class="font-2-l-b cor-4">Tecnologia Avançada</span>
+        <h2 class="font-1-xxl cor-w">você escolhe as suas cores e componentes<span class="cor-p1">.</span></h2>
+        <p class="font-2-l cor-4">Cada BikCustOnm é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</p>
+        <a href="./bicicletas.html" class="font-1-l cor-p1">Escolha um modelo</a>
+        <div class="tecnologia-caracteristicas">
+          <ul>
+            <li>
+              <img src="./img/icons/advantages/vantagem 1.svg" alt="">
+              <h3 class="font-1-l cor-w">Motor Elétrico</h3>
+              <p class="font-2-s cor-4">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
+            </li>
+            <li>
+              <img src="img/icons/advantages/vantagem 3.svg" alt="">
+              <h3 class="font-1-l cor-w">Rastreador</h3>
+              <p class="font-2-s cor-4">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <picture class="tecnologia-imagem">
+        <img src="./img/photos/tecnology.jpg" alt="Imagem de ferramentas">
+      </picture>
+    </div>
+  </article>
+  <section class="parceiros-bg" aria-label="Nossos parceiros">
+    <div class="parceiros">
+      <h2 class="parceiros font-1-xxl cor-11">nossos parceiros<span class="cor-p1">.</span></h2>
+      <ul>
+        <li><img src="img/partners/caravan.svg" alt="caravan" /></li>
+        <li><img src="img/partners/ranek.svg" alt="ranek" /></li>
+        <li><img src="img/partners/handel.svg" alt="handel" /></li>
+        <li><img src="img/partners/dogs.svg" alt="dogs" /></li>
+        <li><img src="img/partners/lescone.svg" alt="lescone" /></li>
+        <li><img src="img/partners/flexblog.svg" alt="flexblog" /></li>
+        <li><img src="img/partners/wildbeast.svg" alt="wildbeast" /></li>
+        <li><img src="img/partners/suftbot.svg" alt="suftbot" /></li>
+      </ul>
+    </div>
+  </section>
+  <section class="depoimentos-bg" aria-label="Depoimento">
+    <div class="depoimentos container">
+      <div><img src="img/photos/depoiment.jpg" class="depoimento-img"></div>
+      <div class="depoimento-textos">
+        <blockquote class="font-1-xl cor-p5">
+          <p class="depoimento-p cor-p5">Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.
+          </p>
+        </blockquote>
+        <span class="font-1-m-b cor-p5"><cite>Ana Júlia</cite></span>
+      </div>
+    </div>
+  </section>
+  <article class="seguros-bg">
+    <div class="seguros container">
+      <h2 class="font-1-xxl cor-1">seguros<span class="cor-p1">.</span></h2>
+      <div class="seguros-item">
+        <h3 class="font-1-xl cor-5">PRATA</h3>
+        <span class="font-1-xl cor-w">R$ 199<span class="font-1-xs cor-6">mensal</span></span>
+        <ul class="font-2-m cor-0">
+          <li>Duas trocas por ano</li>
+          <li>Assitência técnica</li>
+          <li>Suporte 08h às 18h</li>
+          <li>Cobertura estadual</li>
+        </ul>
+        <a href="./orcamento.html" class="botao secundario">INSCREVA-SE</a>
+
+      </div>
+      <div class="seguros-item">
+        <h3 class="font-1-xl cor-especial">OURO</h3>
+        <span class="font-1-xl cor-w">R$ 299<span class="font-1-xs cor-6">mensal</span></span>
+        <ul class="font-2-m cor-0">
+          <li><strong>Cinco</strong> &nbsp; trocas por ano</li>
+          <li>Assitência técnica&nbsp;  <strong>especial</strong></li>
+          <li>Suporte &nbsp; <strong>24h</strong></li>
+          <li>Cobertura&nbsp;  <strong>nacional</strong></li>
+          <li><strong>Desconto em parceiros</strong></li>
+          <li>Acesso ao &nbsp; <strong class="cor-especial">Clube BikCustOnm</strong></li>
+        </ul>
+        <a href="./orcamento.html" class="botao">INSCREVA-SE</a>
+
+      </div>
+    </div>
+  </article>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
