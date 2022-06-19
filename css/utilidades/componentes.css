@@ -31,9 +31,46 @@
   background: linear-gradient(180deg, #ffc700 0%, #ff5c00 100%);
 }
 
+
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/icons/decorations/dec-arrow.svg");
+}
+
+.botao.seta:hover::after {
+  transition: 0.2s;
+  transform: translateX(4px);
+}
+
+/* Títulos internos */
+.titulo-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: linear-gradient(180deg, #000000 0%, #151515 7.29%);
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
 @media (max-width: 800px) {
   .botao {
     padding: 12px 16px;
     font-size: 1rem;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
   }
 }

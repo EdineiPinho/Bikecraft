@@ -16,10 +16,16 @@
 @import "./home/depoimentos.css";
 @import "./home/seguros.css";
 
+/* termos */
+@import "./termos/termos.css";
+
 /* bicicletas */
 @import "./bicicletas/bicicletas-lista.css";
+@import "./bicicletas/bicicletas.css";
+@import "./bicicletas/bicicleta-unica.css";
+@import "./bicicletas/seguro.css";
 
-footer {
-  height: 400px;
-  background: linear-gradient(180deg, #141414 0%, #000000 13.58%);
-}
+/* seguros */
+@import "./seguros/seguros.css";
+@import "./seguros/vantagens.css";
+@import "./seguros/perguntas.css";
