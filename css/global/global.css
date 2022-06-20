@@ -10,7 +10,8 @@ h4,
 ul,
 p,
 blockquote,
-dd {
+dd,
+address {
   margin: 0;
 }
 

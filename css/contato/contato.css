@@ -1,0 +1,99 @@
+.contato-bg {
+  background: linear-gradient(  #151515 50%, var(--cor-0) 0);
+  padding: 20px;
+}
+
+.contato {
+  padding: 24px 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+
+}
+
+.contato-lojas {
+  background-color: var(--cor-12);
+  padding: 60px;
+  border-radius: 4px 0 0 4px;
+
+}
+
+.contato-lojas h2 {
+  margin-bottom: 60px;yj
+}
+
+.contato-lojas ul {
+  display: grid;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.contato-lojas li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.contato-lojas li p {
+  margin-top: -10px;
+  font-style: normal;
+}
+
+.contato-lojas a:hover {
+  color: var(--cor-w);
+}
+
+.contato address {
+  font-style: normal;
+}
+
+.contato address {
+  font-style: normal;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+  padding-left: 32px;
+  align-items: center;
+}
+
+.contato-lojas,
+.contato-form {
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.contato-form {
+  background-color: var(--cor-w);
+  padding: 60px;
+}
+
+
+.contato button {
+}
+
+@media (max-width: 1000px) {
+  .contato {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+
+  .contato-lojas {
+    border-radius: 4px 4px 0 0;
+  }
+.contato-form {
+border-radius: 0 0 4px 4px;
+}
+
+@media (max-width: 600px) {
+  .contato {
+    padding: 20px;
+  }
+  .contato-form form {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-form a {
+    font-size: 1rem;
+  }
+}

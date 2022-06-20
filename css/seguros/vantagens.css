@@ -13,12 +13,25 @@
   margin-top: 60px;
 }
 
+.vantagens li {
+  padding: 8px;
+  border: 1px solid transparent;
+}
+
+.vantagens li:hover {
+  background-color: var(--cor-11);
+}
+
+.vantagens li:active {
+  border: 1px solid var(--cor-11);
+}
+
 .vantagens img {
-  padding-bottom: 8px;
+  padding-bottom: 4px;
 }
 
 .vantagens h3 {
-  padding-bottom: 12px;
+  padding-bottom: 8px;
 }
 
 @media (max-width: 800px) {

@@ -9,10 +9,15 @@
 .perguntas dl > div {
   padding: 20px;
   border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.perguntas dl > div:hover {
+  border: 1px solid var(--cor-1);
 }
 
 .perguntas dl > div:nth-child(odd) {
- background-color: var(--cor-0);
+  background-color: var(--cor-0);
 }
 
 .perguntas dt {
@@ -38,7 +43,11 @@
   display: inline-block;
   width: 12px;
   height: 8px;
-  background: url('../../img/icons/decorations/deco-show-hide-content.svg');
+  background: url("../../img/icons/decorations/deco-show-hide-content.svg");
+}
+
+.perguntas dt:hover {
+  color: var(--cor-8);
 }
 
 .perguntas dt:hover::after {

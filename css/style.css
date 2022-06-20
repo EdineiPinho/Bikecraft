@@ -1,5 +1,6 @@
 /* utilidades */
 @import "./utilidades/componentes.css";
+@import "./utilidades/formularios.css";
 
 /* globais */
 @import "./global/global.css";
@@ -29,3 +30,7 @@
 @import "./seguros/seguros.css";
 @import "./seguros/vantagens.css";
 @import "./seguros/perguntas.css";
+
+/* contato */
+@import "./contato/contato.css";
+@import "./contato/lojas.css";

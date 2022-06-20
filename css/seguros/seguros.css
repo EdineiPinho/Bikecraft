@@ -30,6 +30,11 @@
 .seguros-item h3 {
   margin-bottom: 40px;
 }
+
+.seguros-item li p:hover {
+  color: var(--cor-w);
+}
+
 .seguros-item span {
   grid-column: 2;
   display: block;
