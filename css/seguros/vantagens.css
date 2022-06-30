@@ -1,72 +1,36 @@
 .vantagens-bg {
-  padding: 120px 20px;
   background-color: var(--cor-12);
 }
 
 .vantagens {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.vantagens h2 {
+  margin-bottom: 60px;
+}
+
+.vantagens ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
 }
 
-.vantagens {
-  margin-top: 60px;
-}
-
-.vantagens li {
-  padding: 8px;
-  border: 1px solid transparent;
-}
-
-.vantagens li:hover {
-  background-color: var(--cor-11);
-}
-
-.vantagens li:active {
-  border: 1px solid var(--cor-11);
-}
-
+.vantagens h3,
 .vantagens img {
-  padding-bottom: 4px;
-}
-
-.vantagens h3 {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 800px) {
-  .vantagens-bg {
-    padding: 60px 20px;
-  }
-
   .vantagens {
-    margin-top: 40px;
-    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-
-  .vantagens h3 {
-    font-size: 1.5rem;
+  .vantagens h2 {
+    margin-bottom: 40px;
   }
-
-  .vantagens p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .vantagens {
+  .vantagens ul {
     gap: 20px;
-  }
-  .vantagens img {
-    margin-bottom: 12px;
-  }
-  .vantagens h3 {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 300px) {
-  .vantagens {
-    grid-template-columns: 1fr;
   }
 }

@@ -1,28 +1,24 @@
 :root {
-  --cor-w: #ffffff;
-  --cor-0: #f5f5f5;
-  --cor-1: #e0e0e0;
-  --cor-2: #cccccc;
-  --cor-3: #b8b8b8;
-  --cor-4: #a3a3a3;
-  --cor-5: #8f8f8f;
-  --cor-6: #7a7a7a;
-  --cor-7: #666666;
-  --cor-8: #525252;
-  --cor-9: #3d3d3d;
-  --cor-10: #292929;
-  --cor-11: #141414;
+  --cor-0: #ffffff;
+  --cor-1: #f7f7f7;
+  --cor-2: #ededed;
+  --cor-3: #dedede;
+  --cor-4: #cccccc;
+  --cor-5: #b2b2b2;
+  --cor-6: #9c9c9c;
+  --cor-7: #717171;
+  --cor-8: #595959;
+  --cor-9: #404040;
+  --cor-10: #2e2e2e;
+  --cor-11: #111111;
   --cor-12: #000000;
   --cor-p1: #ffbb00;
   --cor-p2: #e4a30b;
-  --cor-p3: #a66e00;
+  --cor-p3: #a66f00;
   --cor-p4: #664400;
   --cor-p5: #332200;
-  --gd: linear-gradient(#ffe600, #ff7a00);
 }
-.cor-w {
-  color: var(--cor-w);
-}
+
 .cor-0 {
   color: var(--cor-0);
 }
@@ -76,14 +72,4 @@
 }
 .cor-p5 {
   color: var(--cor-p5);
-}
-.cor-gd {
-  background: var(--gd);
-}
-.cor-especial {
-  background: linear-gradient(180deg, #ffe600 0%, #ff7a00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }

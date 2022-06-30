@@ -1,113 +1,67 @@
-.lojas-bg {
-  background-color: var(--cor-0);
-  padding-top: 60px;
+.lojas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .lojas h2 {
+  grid-column: 1/-1;
   margin-bottom: 60px;
 }
 
-.lojas-mapa {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 40px;
-}
-
-.lojas-mapa img {
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+.lojas img {
   border-radius: 4px 4px 0 0;
-  z-index: 0;
-  min-height: 250px;
-  width: auto;
-  object-fit: cover;
 }
 
-.loja {
-  background-color: #fff;
-  padding: 32px;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-  border-radius: 0 0 4px 4px ;
+.lojas-item {
+  border-radius: 4px;
+  background: var(--cor-0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.loja h3,
-.loja p {
-  margin-bottom: 32px;
-  position: relative;
-}
-
-.loja h3 {
-  margin-left: 20px;
-}
-
-.loja h3::before {
-  content: "";
-  width: 12px;
-  height: 6px;
-  display: inline-block;
-  position: absolute;
-  background: var(--gd);
-  left: -20px;
-  top: 16px;
-}
-
-.loja > p {
-  margin-left: 20px;
-}
-
-.loja > p::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  position: absolute;
-  background: url("../../img/maps/time.svg");
-  left: -20px;
-  top: 9px;
-}
-
-.loja-contato p {
-  padding-left: 8px;
-  border-left: 2px solid var(--cor-0);
-}
-
-.loja-contato {
+.lojas-conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 32px 16px;
+  padding: 32px;
 }
 
-@media (max-width: 1100px) {
-  .loja-contato p {
-    font-size: 1rem;
-  }
+.lojas-conteudo h3,
+.lojas-tempo {
+  grid-column: 1/-1;
 }
 
-@media (max-width: 900px) {
-  .lojas-mapa {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .loja:first-child {
-    grid-row: 2;
-  }
+.lojas-dados {
+  display: grid;
+  gap: 8px;
+  border-left: 2px solid var(--cor-2);
+  padding-left: 12px;
 }
 
-@media (max-width: 500px){
-  .lojas-bg {
-    background-color: var(--cor-0);
-    padding-top: 40px;
+.lojas-tempo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 800px) {
+  .lojas {
+    gap: 20px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
-
-  .lojas-mapa {
-    gap: 20px;
+  .lojas h2 {
+    margin-bottom: 32px;
   }
-
-  .loja-contato {
+  .lojas-conteudo {
     grid-template-columns: 1fr;
-    gap: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lojas {
+    grid-template-columns: 1fr;
   }
 }

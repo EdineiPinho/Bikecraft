@@ -6,7 +6,6 @@
 .termos h2 {
   font-weight: 600;
   margin-bottom: 20px;
-  /* margin-top: 10px; */
 }
 
 .termos p + h2 {
@@ -14,6 +13,6 @@
 }
 
 .termos p {
-  margin-bottom: 24px;
   max-width: 75ch;
+  margin-bottom: 24px;
 }
