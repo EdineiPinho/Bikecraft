@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Bikcraft - Bicicletas Elétricas</title>
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
 
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
+
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
@@ -32,11 +33,11 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
-        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="botao" href="./bicicletas.html">Escolha a sua</a>
+        <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="100">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
+        <p class="font-2-l cor-5 fadeInUp" data-anime="200">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a class="botao fadeInLeft" data-anime="100" href="./bicicletas.html">Escolha a sua</a>
       </div>
-      <picture>
+      <picture class="fadeInUp fadeInRight" data-anime="200">
         <source media="(max-width: 800px)" width="1120" height="680" srcset="./img/bicicletas/nimbus.jpg">
         <img src="./img/fotos/introducao.jpg" alt="Bicicleta elétrica preta.">
       </picture>
@@ -127,7 +128,7 @@
   <article class="seguros-bg">
     <div class="seguros container">
       <h2 class="font-1-xxl cor-0">seguros<span class="cor-p1">.</span></h2>
-      <div class="seguros-item">
+      <div class="seguros-item fadeInLeft">
         <h3 class="font-1-xl cor-6">PRATA</h3>
         <span class="font-1-xl cor-0">R$ 199 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -139,7 +140,7 @@
         <a class="botao secundario" href="./orcamento.html">Inscreva-se</a>
       </div>
 
-      <div class="seguros-item">
+      <div class="seguros-item fadeInRight">
         <h3 class="font-1-xl cor-p1">OURO</h3>
         <span class="font-1-xl cor-0">R$ 299 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -192,6 +193,8 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

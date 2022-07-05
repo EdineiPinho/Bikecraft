@@ -24,7 +24,7 @@
   position: relative;
 }
 
-.header-menu a:after {
+.header-menu a::after {
   content: "";
   display: block;
   height: 2px;
@@ -35,7 +35,8 @@
   position: absolute;
 }
 
-.header-menu a:hover:after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
 }
 
@@ -51,7 +52,7 @@
   .header-menu a:hover {
     background-color: var(--cor-10);
   }
-  .header a:after {
+  .header a::after {
     display: none;
   }
 }
